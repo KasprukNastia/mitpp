@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32126.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab1-CPU-Memory-IO", "Lab1-CPU-Memory-IO\Lab1-CPU-Memory-IO.csproj", "{3C39F668-8DCD-43FC-B112-787CB4DB7271}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C39F668-8DCD-43FC-B112-787CB4DB7271}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C39F668-8DCD-43FC-B112-787CB4DB7271}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C39F668-8DCD-43FC-B112-787CB4DB7271}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C39F668-8DCD-43FC-B112-787CB4DB7271}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8D6665C3-3E99-4644-827C-3A7F6C76C375}
+	EndGlobalSection
+EndGlobal
