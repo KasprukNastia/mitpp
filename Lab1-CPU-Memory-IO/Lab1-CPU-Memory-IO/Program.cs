@@ -27,7 +27,7 @@ namespace Lab1_CPU_Memory_IO
             {
                 for (int index = 0; index < threadsCount; ++index)
                     DoIoBoundOperation();
-            }));
+            });
             long executionTimeMs4 = CalculateExecutionTimeMs(async () =>
             {
                 List<Task> ioBoundTasks = new List<Task>(threadsCount);
@@ -35,10 +35,10 @@ namespace Lab1_CPU_Memory_IO
                     ioBoundTasks.Add(DoIoBoundOperationAsync());
                 await Task.WhenAll(ioBoundTasks);
             });
-            Console.WriteLine(string.Format("Time of complex calculation CPU bound synchronous execution: {0} ms", (object)executionTimeMs1));
-            Console.WriteLine(string.Format("Time of complex calculation CPU bound asynchronous execution: {0} ms", (object)executionTimeMs2));
-            Console.WriteLine(string.Format("Time of IO bound task synchronous execution: {0} ms", (object)executionTimeMs3));
-            Console.WriteLine(string.Format("Time of IO bound task asynchronous execution: {0} ms", (object)executionTimeMs4));
+            Console.WriteLine(string.Format("Time of complex calculation CPU bound synchronous execution: {0} ms", executionTimeMs1));
+            Console.WriteLine(string.Format("Time of complex calculation CPU bound asynchronous execution: {0} ms", executionTimeMs2));
+            Console.WriteLine(string.Format("Time of IO bound task synchronous execution: {0} ms", executionTimeMs3));
+            Console.WriteLine(string.Format("Time of IO bound task asynchronous execution: {0} ms", executionTimeMs4));
         }
 
         private static Task DoCpuBoundComplexCalculation() => Task.Run(DoComplexCalculation);
